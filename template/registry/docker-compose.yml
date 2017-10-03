@@ -9,7 +9,7 @@ web:
     - /etc/docker/tls/server-cert.pem:/etc/ssl/certs/docker-registry
     - /etc/docker/tls/server-key.pem:/etc/ssl/private/docker-registry
 app:
-  image: registry:0.9.1
+  image: registry:2.5.2
   links:
     - cache:cache
   volumes_from:
